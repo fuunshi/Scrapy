@@ -18,7 +18,13 @@ A virtual environment is a great way to isolate project dependencies and ensure 
 
    Replace `venv` with your desired virtual environment name.
 
-3. **Activate the virtual environment:**
+      or **Use Python3:**
+
+   ```bash
+   python3 -m venv .venv
+   ```
+
+4. **Activate the virtual environment:**
 
    - On Windows, run:
      ```bash
@@ -31,7 +37,7 @@ A virtual environment is a great way to isolate project dependencies and ensure 
 
    Once activated, your terminal prompt will change, indicating that you're now working within the virtual environment.
 
-4. **Install Project Dependencies:**
+5. **Install Project Dependencies:**
 
    ```bash
    pip install -r requirements.txt
@@ -39,7 +45,7 @@ A virtual environment is a great way to isolate project dependencies and ensure 
 
    This command will install all the required packages specified in `requirements.txt` into your virtual environment.
 
-5. **When Finished, Deactivate the Virtual Environment:**
+6. **When Finished, Deactivate the Virtual Environment:**
 
    To exit the virtual environment, simply run:
    ```bash
