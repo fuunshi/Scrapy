@@ -19,6 +19,9 @@ class ShareSansarSpider(scrapy.Spider):
             if email_match:
                 emails.append(email_match.group(0))
         
-        file_path = Path(__file__).parent / "emails.txt"
+        filename = response.url.split("/")[-2] + ".txt"
+        data_folder = Path(__file__).parent / "Data"
+        data_folder.mkdir(parents=True, exist_ok=True)
+        file_path = data_folder / filename
         file_path.write_text("\n".join(emails))
             
